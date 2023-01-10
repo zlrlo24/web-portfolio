@@ -1,0 +1,162 @@
+/* sub-style.css */
+:root {
+    --bg-color:#F7F8FF;
+    --text-color:#434656;
+    --main-color1: #341986;
+    --main-color2:#3AA9EA;
+    --secondary-color1:#BAE5FF;
+    --secondary-color2:#DFD4FF;
+}
+
+@font-face {
+    font-family: "SCDream";
+    src: url(../fonts/SCDream4.otf);
+}
+
+body {
+    font-family: 'Montserrat', 'SCDream';
+    margin: 0 auto;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container img {
+    width: 1600px;
+}
+
+.container a {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 3px solid var(--main-color1);
+    border-radius: 25px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 420px;
+    left: 105px;
+}
+
+
+.container a:hover {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid var(--main-color1);
+    background-color: var(--main-color1);
+    transition: 0.3s;
+    border-radius: 25px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 420px;
+    left: 105px;
+}
+
+
+/* aesop */
+#aesop .container a {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 3px solid var(--main-color1);
+    border-radius: 25px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 450px;
+    left: 105px;
+}
+
+
+#aesop .container a:hover {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid var(--main-color1);
+    background-color: var(--main-color1);
+    transition: 0.3s;
+    border-radius: 25px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 450px;
+    left: 105px;
+}
+
+
+/* tidy */
+#tidy .container a {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 3px solid var(--main-color1);
+    border-radius: 25px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 500px;
+    left: 105px;
+}
+
+
+#tidy .container a:hover {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid var(--main-color1);
+    background-color: var(--main-color1);
+    transition: 0.3s;
+    border-radius: 25px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 500px;
+    left: 105px;
+}
+
+
+/* hanmaum */
+#hanmaum .container a {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 3px solid var(--main-color1);
+    border-radius: 25px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 450px;
+    left: 105px;
+}
+
+
+#hanmaum .container a:hover {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid var(--main-color1);
+    background-color: var(--main-color1);
+    transition: 0.3s;
+    border-radius: 25px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 450px;
+    left: 105px;
+}
+
+.top-btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+.top-btn img {
+    width: 50px;
+}

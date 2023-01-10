@@ -1,0 +1,471 @@
+/* style.css */
+:root {
+    --bg-color:#F7F8FF;
+    --text-color:#434656;
+    --main-color1: #341986;
+    --main-color2:#3AA9EA;
+    --secondary-color1:#BAE5FF;
+    --secondary-color2:#DFD4FF;
+}
+
+@font-face {
+    font-family: "SCDream";
+    src: url(../fonts/SCDream4.otf);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', 'SCDream';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F7F8FF;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 90px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#home .title-group h1 {
+    font-size: 180px;
+    font-weight: 900;
+    color: var(--bg-color);
+    -webkit-text-stroke: 1px rgba(52, 25, 134, 0.17);
+}
+
+#home .title-group h1:first-child {
+    position: absolute;
+    top: 130px;
+}
+
+#home .title-group h1:last-child {
+    position: absolute;
+    top: 415px;
+    right: 217px;
+}
+
+
+#home .elipse img:first-child {
+    width: 500px;
+    position: absolute;
+    left: 90px;
+    top: 300px;
+    animation-name: elipse1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes elipse1 {
+    from {
+        transform: translate(0, 0);
+        margin: 0;
+    }
+    to {
+        margin-top: 100px;
+        margin-left: 50px;
+       transform: translate(100px, 0) rotate(-20deg);
+    }
+}
+
+#home .elipse img:last-child {
+    width: 475px;
+    position: absolute;
+    right: 147px;
+    top: 42px;
+    animation-name: elipse2;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes elipse2 {
+    from {
+        transform: translate(0, 0);
+        margin: 0;
+    }
+    to {
+        margin-top: 50px;
+        margin-right: 50px;
+       transform: translate(-80px, 0) rotate(-10deg);
+    }
+}
+
+#home .title-text h1 {
+    font-size: 96px;
+    font-weight: 800;
+    color: var(--text-color);
+    position: absolute;
+}
+
+#home .title-text h1:first-child {
+    top: 255px;
+}
+
+#home .title-text h1:last-child {
+    top: 400px;
+    right: 200px;
+}
+
+/* .title-text h1 span {
+    -webkit-text-stroke: 2px #434656;
+    color: var(--bg-color);
+} */
+
+#home .title-text h1:first-child span:hover{
+    background-color: var(--main-color1);
+    color: #fff;
+    transition: 0.3s;
+}
+
+#home .title-text h1:last-child span:hover{
+    background-color: var(--main-color2);
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+
+
+/* about */
+#about h1 {
+    font-weight: 900;
+    font-size: 58px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+}
+
+.animate__animated.animate__pulse {
+    --animate__infinite: infinite;
+  }
+
+.about-info1 h2 {
+    font-weight: 700;
+    margin-bottom: 48px;
+    margin-top: 100px;
+}
+
+.about-info1 p {
+    font-size: 24px;
+}
+
+.about-info2 {
+    margin-top: 70px;
+}
+
+.about-text h2 {
+    font-style: 36px;
+    font-weight: 900;
+}
+
+.about-text p {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px;
+    line-height: 40px;
+}
+
+.about-text {
+    margin-bottom: 30px;
+}
+.about-info-img {
+    width: 300px;
+    margin-top: 100px;
+}
+
+
+/* works */
+.card {
+    margin-bottom: 100px;
+}
+
+.img-box {
+    overflow: hidden;
+}
+
+.img-box > img {
+    transition: 1s;
+    transform: 1.5s;
+}
+
+.img-box:hover > img {
+    transform: scale(1.2);
+}
+
+
+#works h1 {
+    font-weight: 900;
+    font-size: 58px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.card-body {
+    padding-bottom: 25px;
+}
+
+.card-body h4 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#works .works-btn {
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    background-color: var(--secondary-color1);
+    color: var(--text-color);
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#works .works-btn:hover {
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    background-color: var(--main-color2);
+    transition: 0.3s;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* modal */
+.modal-body img {
+    width: 100%;
+}
+
+
+
+/* etc */
+#etc h1 {
+    font-weight: 900;
+    font-size: 58px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#etc .book > .etc-btn {
+    padding: 8px 20px;
+    margin-top: 10px;
+}
+
+#etc .book {
+    margin-bottom: 7px;
+}
+
+#etc .book h4 {
+    margin-bottom: 30px;
+}
+
+
+#etc .etc-btn{
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    background-color: var(--secondary-color2);
+    color: var(--text-color);
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#etc .etc-btn:hover {
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    background-color: var(--main-color1);
+    transition: 0.3s;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#etc .card img {
+    object-fit: cover;
+}
+
+
+
+/* contact */
+#contact {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#contact .title-group h1 {
+    font-size: 180px;
+    font-weight: 900;
+    color: var(--bg-color);
+    -webkit-text-stroke: 1px rgba(52, 25, 134, 0.17);
+    z-index: 1;
+    margin-top: 250px;
+    
+}
+
+#contact .elipse img:first-child {
+    width: 475px;
+    position: absolute;
+    left: 110px;
+    top: 30px;
+    animation-name: elipse3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    z-index: 2;
+}
+
+@keyframes elipse3 {
+    from {
+        transform: translate(0, 0);
+        margin: 0;
+    }
+    to {
+        margin-top: 100px;
+        margin-left: 50px;
+       transform: translate(100px, 0) rotate(-20deg);
+    }
+}
+
+#contact .elipse img:last-child {
+    width: 470px;
+    position: absolute;
+    right: 80px;
+    bottom: 50px;
+    animation-name: elipse4;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    z-index: 3;
+}
+
+@keyframes elipse4 {
+    from {
+        transform: translate(0, 0);
+        margin: 0;
+    }
+    to {
+        margin-top: 50px;
+        margin-right: 50px;
+       transform: translate(-80px, 0) rotate(-10deg);
+    }
+}
+
+#contact .title-text h1 {
+    font-weight: 900;
+    font-size: 58px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#contact .title-text {
+    position: absolute;
+    z-index: 4;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#contact .title-text h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    line-height: 50px;
+}
+
+#contact .title-text h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 80px;
+}
+
+#contact .title-text p {
+    font-size: 20px;
+}
+
+.animate__bounceIn {
+    --animate-duration: 2s;
+}
+
+.top-btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+
+.top-btn img {
+    width: 50px;
+}
+
+
+@media (max-width:900px) {
+    body {
+        width: 100%;
+    }
+
+    #home .title-text h1 {
+        font-size: 36px;
+        left: 30px;
+    }
+    #home .title-text h1:last-child {
+        top: 400px;
+        left: 30px;
+    }
+    #home .container {
+        width: 100%;
+    }
+
+    #home .title-group h1 {
+        font-size: 100px;
+    }
+
+    .about-info1 h2 {
+        font-size: 24px;
+    }
+
+    .about-info1 p {
+        font-size: 20px;
+    }
+
+    #contact .title-text h3 {
+        font-size: 28px;
+    }
+
+    #contact .title-text h2 {
+        font-size: 30px;
+    }
+
+    #contact .title-text p {
+        font-size: 18px;
+    }
+
+    #contact .title-group h1 {
+        font-size: 100px;
+    }
+    
+    
+}
